@@ -1,6 +1,6 @@
 {
   "name": "vue-flip-page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue翻页效果插件",
   "main": "dist/flip.min.js",
   "scripts": {

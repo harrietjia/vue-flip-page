@@ -26,7 +26,7 @@ handleSwitchManual(index) {
 | data | Array | [ { "picture_image": "https://dev8.yunzmall.com/static/upload/image/8a2b418254cf521ff3e668fa33ac07ee.png", }, { "picture_image": "https://dev8.yunzmall.com/static/upload/image/e7cf7880531ff9cbb91902630c808359.png", }] |传入的数据   |
 
 
-npm包  npm install vue-calendar-l
+npm包  npm install vue-flip-page
 
 在需要用到的页面中（注意 一个页面目前只能引入一次）
 
