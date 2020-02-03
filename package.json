@@ -1,0 +1,51 @@
+{
+  "name": "vue-flip-page",
+  "version": "1.0.1",
+  "description": "vue翻页效果插件",
+  "main": "dist/flip.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --display-error-details --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrietjia/vue-flip-page.git"
+  },
+  "keywords": [
+    "vue",
+    "flip-page",
+    "vue-flip-page"
+  ],
+  "author": "harrietjia",
+  "Email": "1317499207@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrietjia/vue-flip-page/issues"
+  },
+  "homepage": "https://github.com/harrietjia/vue-flip-page#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "es6-promise": "^4.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "vue": "^2.5.9",
+    "vue-hot-reload-api": "^2.2.4",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^13.5.0",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.9",
+    "vuex": "^3.0.1",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
+  }
+}
