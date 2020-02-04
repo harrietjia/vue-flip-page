@@ -23,7 +23,7 @@ handleSwitchManual(index) {
 | ------ | ---- | -------- | ---------- |
 | width  | number | 375 | 宽度 |
 | height | number | 667  | 高度   |
-| data | Array | [ { "picture_image": "https://dev8.yunzmall.com/static/upload/image/8a2b418254cf521ff3e668fa33ac07ee.png", }, { "picture_image": "https://dev8.yunzmall.com/static/upload/image/e7cf7880531ff9cbb91902630c808359.png", }] |传入的数据   |
+| data | Array | [ { "picture_image": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2600216442,2384386498&fm=15&gp=0.jpg", }, { "picture_image": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580807703833&di=0ab054549c3ea050dc0bd49e146b20e9&imgtype=0&src=http%3A%2F%2Fwww.thatsmags.com%2Fimage%2Fview%2F201703%2Fvue-cover.jpg", }] |传入的数据   |
 
 
 npm包  npm install vue-flip-page
@@ -36,6 +36,9 @@ components: { flipPage }
 
 例子：
 
+![图片说明](https://img-blog.csdnimg.cn/20200204142239148.png)
 
 效果：
+
+![图片说明](https://img-blog.csdnimg.cn/20200204142234872.gif)
 
