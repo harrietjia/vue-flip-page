@@ -2,50 +2,41 @@
   <div class="turn-wraper"
        :style="{width: width+'px', height: height+'px', overflow: active ? 'visible' : 'hidden', zIndex: length - index}">
     <div class="turn-page-left" :style="{left: '-'+width+'px'}">
-      <div class="turn-page-left-clip" :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[3]))">
+      <div class="turn-page-left-clip"
+           :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[3]))">
         <div class="turn-page-left-content"
              :style="(Object.assign({}, {width: width+'px', height: height+'px'}, styles[1]))">
           <div class="turn-page-left-inner">
-            <div  class="manual-item">
-              <div  class="page-count">{{index + 1}} / {{length}}</div>
-              <div  class="manual-page">
-                <div  class="page-photo">
-                  <img  :src="item.picture_image">
+            <div class="manual-item">
+              <div class="page-count">{{index + 1}} / {{length}}</div>
+              <div class="manual-page">
+                <div class="page-photo">
+                  <img :src="item.picture_image">
                 </div>
-                <!--<div  class="page-content page-content-type-1">-->
-                  <!--<div  class="desc"><h4  class="name">-->
-                    <!--小程序组件小程序组件小程序组件小程序组件小程序组件小程序组件</h4>-->
-                    <!--<div  class="price">¥19800</div> &lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt;</div>-->
-                  <!--<div  class="buy-button">-->
-                    <!--<button  type="button">查看详情</button>-->
-                  <!--</div>-->
-                <!--</div>-->
+                <slot></slot>
               </div>
             </div>
           </div>
-          <div class="turn-page-left-gradient"  :style="(Object.assign({}, {top: ('-' + (height / 2)+'px'), height: (height* 2)+'px'}, styles[4]))"></div>
+          <div class="turn-page-left-gradient"
+               :style="(Object.assign({}, {top: ('-' + (height / 2)+'px'), height: (height* 2)+'px'}, styles[4]))"></div>
         </div>
       </div>
     </div>
     <div class="turn-page-right" :style="{width: width+'px', height: height+'px'}">
-      <div class="turn-page-right-gradient"  :style="(Object.assign({}, {top: ('-' + (height / 2)+'px'), height: (height* 2)+'px'}, styles[5]))"></div>
+      <div class="turn-page-right-gradient"
+           :style="(Object.assign({}, {top: ('-' + (height / 2)+'px'), height: (height* 2)+'px'}, styles[5]))"></div>
 
-      <div class="turn-page-right-clip" :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[2]))">
-        <div class="turn-page-right-content"  :style="(Object.assign({}, {width: width+'px', height: height+'px'}, styles[0]))">
-          <div  class="manual-item">
-            <div  class="page-count">{{index + 1}} / {{length}}</div>
-            <div  class="manual-page">
-              <div  class="page-photo">
-                <img  :src="item.picture_image">
+      <div class="turn-page-right-clip"
+           :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[2]))">
+        <div class="turn-page-right-content"
+             :style="(Object.assign({}, {width: width+'px', height: height+'px'}, styles[0]))">
+          <div class="manual-item">
+            <div class="page-count">{{index + 1}} / {{length}}</div>
+            <div class="manual-page">
+              <div class="page-photo">
+                <img :src="item.picture_image">
               </div>
-              <!--<div  class="page-content page-content-type-1">-->
-                <!--<div class="desc"><h4  class="name">-->
-                  <!--小程序组件小程序组件小程序组件小程序组件小程序组件小程序组件</h4>-->
-                  <!--<div  class="price">¥19800</div> &lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt;</div>-->
-                <!--<div  class="buy-button">-->
-                  <!--<button  type="button">查看详情</button>-->
-                <!--</div>-->
-              <!--</div>-->
+              <slot></slot>
             </div>
           </div>
         </div>
@@ -55,9 +46,9 @@
 </template>
 
 <script>
-  import turn_page_controller from "./turn_page_controller";
+	import turn_page_controller from "./turn_page_controller";
 
-  export default turn_page_controller;
+	export default turn_page_controller;
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
