@@ -493,7 +493,7 @@ export default {
 			}
 
 			const {width, height, viewIndex} = this;
-			if (this.fun.getPhoneEnv() == 3) {
+			if (getPhoneEnv() == 3) {
 				x = e.clientX - (window.innerWidth - width) / 2;
 				y = e.clientY - (window.innerHeight - height) / 2;
 			} else {
@@ -529,7 +529,7 @@ export default {
 			let y = "";
 			if (this.isStart) {
 				const {width, height} = this;
-				if (this.fun.getPhoneEnv() == 3) {
+				if (getPhoneEnv() == 3) {
 					x = e.clientX - (window.innerWidth - width) / 2;
 					y = e.clientY - (window.innerHeight - height) / 2;
 				} else {
