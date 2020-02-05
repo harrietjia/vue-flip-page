@@ -1,6 +1,8 @@
 # vue-flip-page
 vue翻页组件
 
+博客：https://blog.csdn.net/qq_38188485/article/details/104169249
+
 方法
 change （改变页面）
 tap  （点击）
